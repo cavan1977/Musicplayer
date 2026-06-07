@@ -1,0 +1,25 @@
+[package]
+name = "ui-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dioxus = { version = "0.7.6", features = ["desktop", "web"] }
+dioxus-desktop = "0.7.6"
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+
+audio = { path = "../audio" }
+db = { path = "../db" }
+# crawler = { path = "../crawler" }  # Optional, keep commented if not needed
+
+# Utilities
+rfd = "0.14"
+audiotags = "0.4"
+walkdir = "2.5"
+chrono = "0.4"
+base64 = "0.22"
+lofty = "0.24.0"
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.54", features = ["Win32_Foundation", "Win32_Media_Audio"] }
