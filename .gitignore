@@ -34,10 +34,18 @@ Thumbs.db
 # Sisyphus (internal tool)
 .sisyphus/
 
+# Crawler module (excluded from project)
+crawler/
+
 # Misc temp files
 HANDOFF*.md
 PROJECT_HANDOFF.md
+PROJECT_ARCHITECTURE.md
 UI_ARCHITECTURE_v1.md
 UI_DESIGN_v1.md
 UI_TASKLIST_v1.md
 sisyphus_verification_log.md
+*.txt
+test_path.rs
+ui-new/
+musicplayer/
